@@ -25,7 +25,7 @@ export default function Home() {
     <div className="flex flex-col">
       <div className="grid grid-cols-3 gap-[20px]">
         {data.filter((item)=>item.title.includes(searchValue)).map((item, index) => (
-          <Link href={`/blogPage/${item.id}`}>
+          <Link href={`/blogPage/${item.id}`} key={index}>
             <div
               key={index}
               className="flex flex-col rounded-lg overflow-hidden border-2 p-[20px]"

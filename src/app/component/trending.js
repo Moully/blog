@@ -23,7 +23,7 @@ export const Trending = ()=>{
             <h2 className="text-[24px] font-bold my-[10px]">Trending</h2>
             <div className="grid grid-cols-4 gap-[20px]">
                 {data.map((item, index)=>(
-                    <Link href={`/blogPage/${item.id}`}>
+                    <Link href={`/blogPage/${item.id}`} key={index}>
                         <div key={index} className="h-[320px] relative rounded-lg overflow-hidden">
                             <img className="w-[100%] h-[100%]" src={item.social_image}/>
                             <div className="h-[320px] w-[100%] z-10 absolute left-0 top-0 rounded-lg" style={{backgroundColor:"rgb(0, 0, 0, 0.6)"}}>
