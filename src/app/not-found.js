@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 export default function Home() {
   return (
     <div className="m-auto flex w-[600px] my-[100px]">
