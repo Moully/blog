@@ -26,8 +26,21 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.parent p{
+  margin: 20px 0px;
+  text-align: justify;
+}
+.parent h2{
+  font-size: 20px;
+  font-weight: 600;
+}
+.parent li{
+  margin: 20px 0px;
+  text-align: justify;
+  list-style: circle;
+  margin-left: 40px;
+}
+.parent img{
+  border-radius: 30px;
+  margin: 20px auto;
 }
